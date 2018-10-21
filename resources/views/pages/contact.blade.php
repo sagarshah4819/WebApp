@@ -16,6 +16,10 @@
             <form action="{{route('contact.store')}}" method="post">
                 {{csrf_field()}}
                 <div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
                     <label for="email">Email address</label>
                     <input name="email" class="form-control" id="email" placeholder="name@example.com">
                 </div>
