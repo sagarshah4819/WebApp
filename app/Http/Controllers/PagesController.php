@@ -20,7 +20,8 @@ class PagesController extends Controller
         return redirect()->route('thanks',['name'=> $name ]);
     }
     function thanks($name, Request $request) {
-
-        return view('pages.thankyou')->with[compact('name')];
+        //dd($name);
+        dd($request);
+        return view('pages.thankyou')->with(compact('name'));
     }
 }
