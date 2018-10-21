@@ -13,8 +13,8 @@
 
         <div class="card-body">
 
-            <form action="/contact" method="post">
-                {{ csrf_field()}}
+            <form action="{{route('contact.store')}}" method="post">
+                {{csrf_field()}}
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input name="email" class="form-control" id="email" placeholder="name@example.com">
